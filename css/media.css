@@ -1,0 +1,136 @@
+/*==========  Desktop First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    div.container-width {
+        width: 475px;
+    }
+    div.container {
+        max-width: 480px;
+    }
+    body > div.container-fluid.orange-blok > div:before,
+    body > div.container-fluid.orange-blok > div:after {
+        box-shadow: none;
+    }
+    div.shadow-left:before {
+        background: none;
+    }
+    div.shadow-left:after {
+        background: none;
+    }
+    div#carousel-example-generic {
+        border: none;
+    }
+    div.orange-blok h2 {
+        letter-spacing: 3px;
+    }
+    body form div.form-group,
+    body form div.form-group #inputError1,
+    form.form #city {
+        width: 270px;
+    }
+    body form div.form-group #inputError1 {
+      /*  margin-left: 11px;*/
+    }
+    form.form #day {
+        width: 60px;
+    }
+    form.form #month {
+        width: 100px;
+    }
+    form.form #year {
+        width: 100px;
+    }
+    body input.btn_submit {
+        width: 270px;
+        height: 50px;
+    }
+    #container{
+position: absolute;
+top: 60px;
+left: 40px;
+height: 70px;
+width: 290px; /* 3 images of 150px showing with a 10px margin = 5*(50) + 4*(10) = 290 */
+overflow: hidden;
+}
+    body #carouselLeft {
+        top: 75px;
+    }
+    body #carouselRight {
+        top: 75px;
+    }
+    
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    div.orange-blok .for-forms h2 {
+        letter-spacing: 2px;
+    }
+    body #container img {
+        height: 50px;
+        width: 50px;
+    }
+    .footer_logo_container {
+        text-align: center;
+    }
+    .footer-logo-container img {
+        display: inline-block;
+    }
+    footer h5 {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    body div.container-width {
+        width: 310px;
+    }
+    #wrapper #container {
+        width: 290px;
+    }
+    body form.form div.form-group #inputError1 {
+        margin-left: 11px;
+    }
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 321px) {
+    div.logo_container {
+        margin: 0;
+    }
+}
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}

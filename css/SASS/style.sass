@@ -1,0 +1,336 @@
+@import "../bourbon/bourbon"
+
+$main_color: #222
+$light_black: #929292
+$gray: #bbb
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+.hidden
+	display: none
+.clear
+	clear: both
+body div#padding-none
+	padding: 0
+.container-fluid
+	padding: 0 10px
+	margin: 0
+.container-width
+	max-width: 950px
+	margin: 0 auto
+	height: 100%
+.container
+	max-width: 950px
+header
+	height: 110px
+.logo_container
+	max-width: 320px
+	margin: 0 auto
+.orange-blok
+	min-height: 500px
+	padding: 25px 0
+	margin-bottom: 30px
+	background: #ff8920
+	background: -webkit-radial-gradient(#ffa200, #ff8920) /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(#ffa200, #ff8920) /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(#ffa200, #ff8920) /* For Firefox 3.6 to 15 */
+	background: radial-gradient(#ffa200, #ff8920)
+	.container-width
+		border-radius: 2px
+		background: #f8f8f8
+		box-shadow: 0 0 3px
+	h2
+		text-align: center
+		letter-spacing: 6px
+		color: #ff8210
+		margin-top: 30px
+		margin-bottom: 30px
+	h2 p:after
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 12%
+#carousel-example-generic
+	border-right: 1px solid $gray
+	.item
+		max-width: 475px
+		max-height: 475px
+		overflow: hidden
+	img
+		width: 100%
+		height: 100%
+	ol.carousel-indicators li
+		width: 10px
+		height: 10px
+		margin-right: 3px
+		margin-left: 0
+		background-color: #4a322e
+		opacity: 0.7
+		border: none
+		box-shadow: 0 0 1px 0 #fff
+	ol.carousel-indicators li.active
+		width: 10px
+		height: 10px
+		margin-right: 3px
+		margin-bottom: 1px
+		background: #ff8c1d
+		background: -webkit-radial-gradient(#ff8c1d, #ffab04) /* Safari 5.1 to 6.0 */
+		background: -o-radial-gradient(#ff8c1d, #ffab04) /* For Opera 11.6 to 12.0 */
+		background: -moz-radial-gradient(#ff8c1d, #ffab04) /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom, #ff8c1d, #ffab04)
+		opacity: 1
+		border: 2px solid #4a322e
+		box-shadow: 0 0 1px 0 #fff
+form
+	font-size: 12px
+	padding-bottom: 40px
+	table
+		width: 320px
+		margin-right: auto
+		margin-left: auto
+	td
+		//vertical-align: middle
+		//text-align: center
+		padding-bottom: 15px
+	#padding-none > form > table > tbody > tr:nth-child(1) > td:nth-child(2)
+		text-align: right
+	p
+		display: inline-block
+	.fa-search
+		transform: scaleX(-1)
+		-moz-transform: scaleX(-1)
+		-o-transform: scaleX(-1)
+		-webkit-transform: scaleX(-1)
+	.radio-toolbar input[type="radio"]
+		display: none
+	.radio-toolbar label
+		display: inline-block
+		border: 1px solid #bb9c7d
+		padding: 4px 19px
+		margin-bottom: 3px
+	.radio-toolbar input[type="radio"]:checked + label
+		padding: 5px 19px
+		border: none
+		background: #ffad03
+		background: -webkit-radial-gradient(#ea801b, #ffad03) /* Safari 5.1 to 6.0 */
+		background: -o-radial-gradient(#ea801b, #ffad03) /* For Opera 11.6 to 12.0 */
+		background: -moz-radial-gradient(#ea801b, #ffad03) /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom, #ea801b, #ffad03)
+		box-shadow: 0 1px 5px #ca7016 inset
+	.radio-toolbar label>i.fa
+		color: #ff8210
+	.radio-toolbar input[type="radio"]:checked + label>i.fa
+		color: #fff
+	#left
+		border-radius: 50px 0 0 50px
+	#right
+		border-radius: 0 50px 50px 0
+		margin-left: -13px
+	div.form-group
+		margin-bottom: 0
+		#inputError1
+			width: 310px
+			height: 34px
+			border-radius: 15px
+	#day
+		width: 80px
+		height: 34px
+		border-radius: 15px
+	#month
+		width: 110px
+		height: 34px
+		border-radius: 15px
+	#year
+		width: 110px
+		height: 34px
+		border-radius: 15px
+	#city
+		width: 310px
+		height: 34px
+		border-radius: 15px
+	.r_button 
+		display: none
+	.r_button + label 
+		background: url("../image/radio.png") no-repeat scroll 0 0
+		cursor: pointer
+		padding-left: 25px
+	.r_button:checked + label 
+		background: url("../image/radio_active.png") no-repeat scroll 0 0
+	.r_check 
+		display: none
+	.r_check + label 
+		background: url("../image/check.png") no-repeat scroll 0 0
+		cursor: pointer
+		padding-left: 25px
+	.r_check:checked + label
+		background: url("../image/check_active.png") no-repeat scroll 0 0
+	input.btn_submit
+		width: 310px
+		height: 60px
+		border-radius: 30px
+		font-size: 36px
+		color: #fff
+		border: 1px solid #bfdc73
+		box-shadow: 0 1px 1px #94b432
+		background: #9dc130
+		/* Old browsers */
+		background: -moz-linear-gradient(top, #9dc130 0%, #9dc130 50%, #72aa00 51%, #94c516 100%)
+		/* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #9dc130 0%, #9dc130 50%, #72aa00 51%, #94c516 100%)
+		/* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #9dc130 0%, #9dc130 50%, #72aa00 51%, #94c516 100%)
+		/* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #9dc130 0%, #9dc130 50%, #72aa00 51%, #94c516 100%)
+		/* IE10+ */
+		background: linear-gradient(to bottom, #9dc130 0%, #9dc130 50%, #72aa00 51%, #94c516 100%)
+		/* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dc130', endColorstr='#94c516', GradientType=1)
+		/* IE6-9 */
+#padding-none > form > div > table > tbody > tr > td:nth-child(4) > p
+	margin: 0 5px
+.content
+	max-width: 950px
+	p
+		font-size: 14px
+		text-align: justify
+	img.round-foto
+		border-radius: 50%
+		float: left
+		margin: 7px 7px 7px 0
+		shape-outside: inset(1% round 45%)
+ul.nav-tabs
+	margin-top: 20px
+	li
+		background-color: #f8f8f8
+		border-top: 1px solid #eeeeee
+		border-left: 1px solid #cccccc
+		border-radius:  10px 10px 0 0
+	li > a
+		color: #a3a3a3
+		font-size: 14px
+	li.active > a
+		color: #ffaf69
+		border-left: 1px solid #cccccc
+		span
+			color: $light_black
+.statistic
+	max-width: 380px
+	border-top: none
+	margin-top: 80px
+	padding-left: 20px
+	padding-top: 30px
+	.progress
+		width: 210px
+		height: 17px
+		color: #eceeef
+		margin-top: 22px
+		margin-bottom: 25px
+		border-left: 1px solid #D4D4D4
+		border-top: 1px solid #D4D4D4
+		border-right: 1px solid #afafaf
+		border-bottom: 1px solid #afafaf
+		background: #edf0f0
+		background: -webkit-radial-gradient(#f4f9fa, #e7e8e8) /* Safari 5.1 to 6.0 */
+		background: -o-radial-gradient(#f4f9fa, #e7e8e8) /* For Opera 11.6 to 12.0 */
+		background: -moz-radial-gradient(#f4f9fa, #e7e8e8) /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom, #f4f9fa, #e7e8e8)
+		.progress-bar
+			height: 12px
+			text-align: right
+			font-size: 8px
+			margin-top: 2px
+			margin-left: 2px
+			padding-top: 0
+			padding-right: 15px
+			color: $main-color
+			border-radius: 3px
+			background: #ff8d1c
+			background: -webkit-radial-gradient(#ffaa05, #ff8d1c) /* Safari 5.1 to 6.0 */
+			background: -o-radial-gradient(#ffaa05, #ff8d1c) /* For Opera 11.6 to 12.0 */
+			background: -moz-radial-gradient(#ffaa05, #ff8d1c) /* For Firefox 3.6 to 15 */
+			background: linear-gradient(to bottom, #ffaa05, #ff8d1c)
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+
+.text
+	font-size: 14px
+	padding-bottom: 50px
+	line-height: 20px
+	.column
+		-webkit-column-width: 290px
+		-moz-column-width: 290px
+		column-width: 290px
+		-webkit-column-count: 3
+		-moz-column-count: 3
+		column-count: 3
+		-webkit-column-gap: 25px
+		-moz-column-gap: 25px
+		column-gap: 25px
+	.orange-section
+		color: #ffc28c
+		font-size: 14px
+		border-left: 3px solid #ffa352
+	span
+		font-size: 8px
+		color: $gray
+	p.select
+		line-height: 25px
+	a
+		color: #ffc28c
+		text-decoration: underline
+	a.more
+		position: relative
+		float: right
+		padding-top: 25px
+	blockquote
+		line-height: 15px
+	blockquote.quote
+		border-left: none
+		font-style: italic
+		margin: 0
+		padding: 0
+		font-size: 12px
+		color: $gray
+	blockquote.quote:before
+		content: "\201C"/* Непечатаемый символ слева */
+		font-size: 3em
+		line-height: 0.1em
+		margin-right: 0.2em
+		vertical-align: -.4em
+	blockquote.quote:after
+		content: "\201D" /* Непечатаемый символ справа */
+		font-size: 3em
+		line-height: 0.1em
+		vertical-align: -.45em
+	blockquote.quote > p:first-child
+		display: inline
+footer
+	min-height: 100px
+	.container-width
+		padding: 30px 0
+		border-top: 1px solid #ececec
+	p
+		display: inline-block
+		position: relative
+		float: right
+	h5
+		text-align: right
+	h5 span
+		color: $gray

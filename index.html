@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Web Test</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--responsive-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
+    <!--personal plagins-->
+    <link href="css/breadcrumbs.css" rel="stylesheet">
+    <link href="css/UISlider.css" rel="stylesheet">
+    <link href="css/clickCarousel.css" rel="stylesheet">
+    <link href="css/circle-progress.css" rel="stylesheet">
+    <link href="css/reviewStars.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <header>
+        <div id="padding-none" class="container-fluid">
+            <div class="container-width">
+                <div class="logo_container">
+                    <a href="#">
+                        <img src="image/header_logo.png" alt="logo" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid orange-blok">
+        <div class="container-width">
+            <div id="padding-none" class="shadow-left col-md-6">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="image/slider/slide.png" alt="..." />
+                        </div>
+                        <div class="item">
+                            <img src="image/slider/slide.png" alt="..." />
+                        </div>
+                        <div class="item">
+                            <img src="image/slider/slide.png" alt="..." />
+                        </div>
+                        <div class="item">
+                            <img src="image/slider/slide.png" alt="..." />
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"></a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"></a>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
+                </div>
+            </div>
+            <div id="padding-none" class="shadow-right for-forms col-md-6">
+                <h2><p>Join us now. It's FREE</p></h2>
+                <form action="#" method="post" class="form">
+                    <div class="radio-toolbar">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>I am</p>
+                                </td>
+                                <td>
+
+                                    <input class="woman" id="woman-sex" type="radio" name="sex1" value="woman" checked/>
+                                    <label id="left" for="woman-sex"><i class="fa fa-female fa-lg" aria-hidden="true"></i></label>
+                                </td>
+                                <td>
+                                    <input class="man" id="man-sex" type="radio" name="sex1" value="man" />
+                                    <label id="right" for="man-sex"><i class="fa fa-male fa-lg" aria-hidden="true"></i></label>
+                                </td>
+                                <td>
+                                    <p><i class="fa fa-search"></i> looking for</p>
+                                </td>
+                                <td>
+                                    <input class="woman" id="woman-sex-search" type="radio" name="sex" value="woman" />
+                                    <label id="left" for="woman-sex-search"><i class="fa fa-female fa-lg" aria-hidden="true"></i></label>
+                                </td>
+                                <td>
+                                    <input class="man" id="man-sex-search" type="radio" name="sex" value="man" checked/>
+                                    <label id="right" for="man-sex-search"><i class="fa fa-male fa-lg" aria-hidden="true"></i></label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>Name</p>
+                            </td>
+                            <td>
+                                <div class="form-group has-error">
+                                    <input type="text" class="form-control" id="inputError1" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Age</p>
+                            </td>
+                            <td>
+                                <select id="day" name="day">
+                                    <option value="s1" label="12" selected>12</option>
+                                    <option value="s2" label="11">11</option>
+                                    <option value="s3" label="10">10</option>
+                                    <option value="s3" label="9">9</option>
+                                </select>
+                                <select id="month" name="month">
+                                    <option value="s1" label="october" selected>october</option>
+                                    <option value="s2" label="lorem">lorem</option>
+                                    <option value="s3" label="lorem">lorem</option>
+                                    <option value="s3" label="lorem">lorem</option>
+                                </select>
+                                <select id="year" name="year">
+                                    <option value="s1" label="1984" selected>1984</option>
+                                    <option value="s2" label="lorem">lorem</option>
+                                    <option value="s3" label="lorem">lorem</option>
+                                    <option value="s3" label="lorem">lorem</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>City</p>
+                            </td>
+                            <td>
+                                <select id="city" name="city">
+                                    <option value="s1" label="London" selected>London</option>
+                                    <option value="s2" label="lorem">lorem</option>
+                                    <option value="s3" label="lorem">lorem</option>
+                                    <option value="s3" label="lorem">lorem</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <input class="r_check" type="checkbox" id="ch_1" checked/>
+                                <label for="ch_1">I'm cool</label>
+                                <input class="r_button" type="radio" name="optionsRadios" id="r_1" value="option1" />
+                                <label for="r_1">Tee</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <input class="r_check" type="checkbox" id="ch_2" />
+                                <label for="ch_2">Life's good</label>
+                                <input class="r_button" type="radio" name="optionsRadios" id="r_2" value="option2" checked/>
+                                <label for="r_2">Beer</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" class="btn_submit disabled" value="Start Now" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container-width">
+            <div class="row">
+                <div id="padding-none" class="container content">
+                    <div id="" class="col-md-6">
+                        <h3>Code this block</h3>
+                        <p>
+                            <a href="#"><img class="round-foto" src="image/avapost.png" alt="avatar"></a>
+                            This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage. We</p>
+                    </div>
+                    <div id="" class="col-md-6">
+
+                        <div id="wrapper">
+                            <h3>User List</h3>
+                            <div id="container">
+                                <img src="image/sliderMini/img.png" alt="ava" />
+                                <img src="image/sliderMini/img2.png" alt="ava" />
+                                <img src="image/sliderMini/img3.png" alt="ava" />
+                                <img src="image/sliderMini/img4.png" alt="ava" />
+                                <img src="image/sliderMini/img5.png" alt="ava" />
+                                <img src="image/sliderMini/img6.png" alt="ava" />
+                                <img src="image/sliderMini/img7.png" alt="ava" />
+                                <img src="image/sliderMini/img8.png" alt="ava" />
+                                
+                                <img src="image/sliderMini/img9.png" alt="ava" />
+                               <!-- <div class="description">
+			<a href="#">SexyGirl</a>
+		</div>-->
+                            </div>
+                            <!-- container -->
+                            <img src="image/sliderMini/Arr.jpg" id="carouselLeft" alt="Left Arrow" />
+                            <img src="image/sliderMini/Arr.jpg" id="carouselRight" alt="Right Arrow" />
+                        </div>
+                        <!-- wrapper -->
+                        <div class="statistic">
+                            <ul class="nav nav-tabs">
+                                <li role="presentation"><a href="#">Users List</a></li>
+                                <li role="presentation" class="active"><a href="#">Active list tab <span>| 38</span></a></li>
+                            </ul>
+                            <div id="padding-none" class="col-sm-7">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                        <span>20%</span>
+                                    </div>
+                                </div>
+                                <ul id="breadcrumbs-one">
+                                    <li><a href="">Step 1</a></li>
+                                    <li><a href="">Step 2</a></li>
+                                    <li><a href="" class="current">Step 3</a></li>
+                                    <li><a href="">Step 4</a></li>
+                                    <li><a href="">Step 5</a></li>
+                                </ul>
+                                <div id="slider"></div>
+                            </div>
+
+
+                            <div id="padding-none" class="col-sm-5">
+                                <div class="radial-progress" data-progress="37">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                            <div class="fill fix"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="inset">
+                                        <div class="percentage">
+                                            <div class="numbers"><span>-</span><span>0%</span><span>1%</span><span>2%</span><span>3%</span><span>4%</span><span>5%</span><span>6%</span><span>7%</span><span>8%</span><span>9%</span><span>10%</span><span>11%</span><span>12%</span><span>13%</span><span>14%</span><span>15%</span><span>16%</span><span>17%</span><span>18%</span><span>19%</span><span>20%</span><span>21%</span><span>22%</span><span>23%</span><span>24%</span><span>25%</span><span>26%</span><span>27%</span><span>28%</span><span>29%</span><span>30%</span><span>31%</span><span>32%</span><span>33%</span><span>34%</span><span>35%</span><span>36%</span><span>37%</span><span>38%</span><span>39%</span><span>40%</span><span>41%</span><span>42%</span><span>43%</span><span>44%</span><span>45%</span><span>46%</span><span>47%</span><span>48%</span><span>49%</span><span>50%</span><span>51%</span><span>52%</span><span>53%</span><span>54%</span><span>55%</span><span>56%</span><span>57%</span><span>58%</span><span>59%</span><span>60%</span><span>61%</span><span>62%</span><span>63%</span><span>64%</span><span>65%</span><span>66%</span><span>67%</span><span>68%</span><span>69%</span><span>70%</span><span>71%</span><span>72%</span><span>73%</span><span>74%</span><span>75%</span><span>76%</span><span>77%</span><span>78%</span><span>79%</span><span>80%</span><span>81%</span><span>82%</span><span>83%</span><span>84%</span><span>85%</span><span>86%</span><span>87%</span><span>88%</span><span>89%</span><span>90%</span><span>91%</span><span>92%</span><span>93%</span><span>94%</span><span>95%</span><span>96%</span><span>97%</span><span>98%</span><span>99%</span><span>100%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="reviewStars-input">
+                                    <input id="star-4" type="radio" name="reviewStars" />
+                                    <label title="gorgeous" for="star-4"></label>
+
+                                    <input id="star-3" type="radio" name="reviewStars" />
+                                    <label title="good" for="star-3"></label>
+
+                                    <input id="star-2" type="radio" name="reviewStars" />
+                                    <label title="regular" for="star-2"></label>
+
+                                    <input id="star-1" type="radio" name="reviewStars" />
+                                    <label title="poor" for="star-1"></label>
+
+                                    <input id="star-0" type="radio" name="reviewStars" />
+                                    <label title="bad" for="star-0"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container-width">
+            <div class="row">
+                <div class="container text">
+                    <h3>How to succeed in online dating</h3>
+                    <div class="column">
+                        <p>There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.</p>
+                        <blockquote class="orange-section">
+                            <p>In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then prompted to upload a photo from your computer. Your 'Primary’ photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.</p>
+                        </blockquote>
+                        <p>You can also upload photos to your dating profile from your Facebook account.</p>
+                        <p class="select">
+                            <span>1.</span> &thinsp; Access your dating life even when you’re not browsing <a href="#">Cupid.com!</a>
+                            <br>
+                            <span>2.</span> &thinsp; Search for new matches from your browser easily
+                            <br>
+                            <span>3.</span> &thinsp; Read and write messages &#38; chat with members live; receive Datecasts, winks and alerts when your are online or have updated their profile info
+                            <br>
+                            <span>4.</span> &thinsp; Read and write messages &#38; chat with members live; receive Datecasts, winks and alerts when your friends
+                        </p>
+                        <blockquote class="quote">
+                            <p>In the "My Account" area visit the section for photos entitled “My Photos“ and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer Your 'Primary' photo is visible to everyone and should be a ’normal' photo. 'For friends only'photos are visible only to those on your friends list.</p>
+                        </blockquote>
+
+                        <p><a class="more" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Click here to view more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="container-width">
+                <div class="row">
+                    <div class="container">
+                        <div id="padding-none" class="col-sm-6">
+                            <div class="footer_logo_container">
+                                <a href="#"><img src="image/footer_logo.png" alt="logo2" /></a>
+                            </div>
+                        </div>
+                        <div id="padding-none" class="col-sm-6">
+                            <h5><span>VD</span> Web Coder Test Task<br><span>2013</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+    <script type="text/javascript">
+        jQuery("#slider").slider({
+            min: 0,
+            max: 1000,
+            values: [0, 1000],
+            range: true
+        });
+
+    </script>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- for clickCarousel -->
+    <script type="text/javascript" href="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/click-carousel.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#container").clickCarousel({
+                margin: 10
+            });
+        });
+
+    </script>
+
+    <!-- for circle-progress -->
+    <script type="text/javascript">
+        document.querySelector('.radial-progress').setAttribute('data-progress', 37)
+
+    </script>
+
+</body>
+
+</html>

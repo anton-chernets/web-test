@@ -1,0 +1,100 @@
+/* Ширина слайдера */
+
+#slider {
+    width: 210px;
+}
+
+/* Контейнер слайдера */
+
+.ui-slider {
+    position: relative;
+    margin-top: 25px;
+}
+
+/* Ползунок */
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 13px;
+    /* Задаем нужную ширину */
+    height: 25px;
+    /* и высоту */
+    background: url(../image/double/polz.jpg) no-repeat;
+    /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+    cursor: pointer
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+
+.ui-slider-horizontal {
+    height: 17px;
+    /* задаем высоту согласно дизайна */
+}
+
+/* позиционируем ползунки */
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -5px;
+    margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 1px;
+    height: 12px;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+
+/* оформление полосы по которой ходит ползунок */
+
+.ui-widget-content {
+    border-left: 1px solid #D4D4D4;
+    border-top: 1px solid #D4D4D4;
+    border-right: 1px solid #afafaf;
+    border-bottom: 1px solid #afafaf;
+    background: #edf0f0;
+    background: -webkit-radial-gradient(#f4f9fa, #e7e8e8);
+    /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#f4f9fa, #e7e8e8);
+    /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#f4f9fa, #e7e8e8);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #f4f9fa, #e7e8e8);
+}
+
+/* оформление активного участка (между двумя ползунками) */
+
+.ui-widget-header {
+    border-left: 1px solid #ffbb30;
+    border-top: 1px solid #ffbb30;
+    border-right: 1px solid #c26a17;
+    border-bottom: 1px solid #c26a17;
+    background: #ff8d1c;
+    background: -webkit-radial-gradient(#ffaa05, #ff8d1c);
+    /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#ffaa05, #ff8d1c);
+    /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#ffaa05, #ff8d1c);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #ffaa05, #ff8d1c);
+}
+
+/* скругление для полосы слайдера */
+
+.ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}

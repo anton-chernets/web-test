@@ -1,0 +1,424 @@
+@charset "UTF-8";
+/* line 7, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialised; }
+
+/* line 17, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red; }
+
+/* line 20, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+body input:required:valid,
+body textarea:required:valid {
+  color: green; }
+
+/* line 22, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+.hidden {
+  display: none; }
+
+/* line 24, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+.clear {
+  clear: both; }
+
+/* line 26, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+body div#padding-none {
+  padding: 0; }
+
+/* line 28, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+.container-fluid {
+  padding: 0 10px;
+  margin: 0; }
+
+/* line 31, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+.container-width {
+  max-width: 950px;
+  margin: 0 auto;
+  height: 100%; }
+
+/* line 35, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+.container {
+  max-width: 950px; }
+
+/* line 37, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+header {
+  height: 110px; }
+
+/* line 39, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+.logo_container {
+  max-width: 320px;
+  margin: 0 auto; }
+
+/* line 42, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+.orange-blok {
+  min-height: 500px;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  background: #ff8920;
+  background: -webkit-radial-gradient(#ffa200, #ff8920);
+  background: -o-radial-gradient(#ffa200, #ff8920);
+  background: -moz-radial-gradient(#ffa200, #ff8920);
+  background: radial-gradient(#ffa200, #ff8920); }
+  /* line 51, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .orange-blok .container-width {
+    border-radius: 2px;
+    background: #f8f8f8;
+    box-shadow: 0 0 3px; }
+  /* line 55, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .orange-blok h2 {
+    text-align: center;
+    letter-spacing: 6px;
+    color: #ff8210;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  /* line 61, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .orange-blok h2 p:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12%; }
+
+/* line 68, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+#carousel-example-generic {
+  border-right: 1px solid #bbb; }
+  /* line 70, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  #carousel-example-generic .item {
+    max-width: 475px;
+    max-height: 475px;
+    overflow: hidden; }
+  /* line 74, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  #carousel-example-generic img {
+    width: 100%;
+    height: 100%; }
+  /* line 77, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  #carousel-example-generic ol.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 0;
+    background-color: #4a322e;
+    opacity: 0.7;
+    border: none;
+    box-shadow: 0 0 1px 0 #fff; }
+  /* line 86, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  #carousel-example-generic ol.carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-bottom: 1px;
+    background: #ff8c1d;
+    background: -webkit-radial-gradient(#ff8c1d, #ffab04);
+    background: -o-radial-gradient(#ff8c1d, #ffab04);
+    background: -moz-radial-gradient(#ff8c1d, #ffab04);
+    background: linear-gradient(to bottom, #ff8c1d, #ffab04);
+    opacity: 1;
+    border: 2px solid #4a322e;
+    box-shadow: 0 0 1px 0 #fff; }
+
+/* line 99, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+form {
+  font-size: 12px;
+  padding-bottom: 40px; }
+  /* line 102, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form table {
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto; }
+  /* line 106, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form td {
+    padding-bottom: 15px; }
+  /* line 110, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form #padding-none > form > table > tbody > tr:nth-child(1) > td:nth-child(2) {
+    text-align: right; }
+  /* line 112, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form p {
+    display: inline-block; }
+  /* line 114, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .fa-search {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); }
+  /* line 119, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .radio-toolbar input[type="radio"] {
+    display: none; }
+  /* line 121, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .radio-toolbar label {
+    display: inline-block;
+    border: 1px solid #bb9c7d;
+    padding: 4px 19px;
+    margin-bottom: 3px; }
+  /* line 126, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .radio-toolbar input[type="radio"]:checked + label {
+    padding: 5px 19px;
+    border: none;
+    background: #ffad03;
+    background: -webkit-radial-gradient(#ea801b, #ffad03);
+    background: -o-radial-gradient(#ea801b, #ffad03);
+    background: -moz-radial-gradient(#ea801b, #ffad03);
+    background: linear-gradient(to bottom, #ea801b, #ffad03);
+    box-shadow: 0 1px 5px #ca7016 inset; }
+  /* line 135, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .radio-toolbar label > i.fa {
+    color: #ff8210; }
+  /* line 137, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .radio-toolbar input[type="radio"]:checked + label > i.fa {
+    color: #fff; }
+  /* line 139, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form #left {
+    border-radius: 50px 0 0 50px; }
+  /* line 141, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form #right {
+    border-radius: 0 50px 50px 0;
+    margin-left: -13px; }
+  /* line 144, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form div.form-group {
+    margin-bottom: 0; }
+    /* line 146, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+    form div.form-group #inputError1 {
+      width: 310px;
+      height: 34px;
+      border-radius: 15px; }
+  /* line 150, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form #day {
+    width: 80px;
+    height: 34px;
+    border-radius: 15px; }
+  /* line 154, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form #month {
+    width: 110px;
+    height: 34px;
+    border-radius: 15px; }
+  /* line 158, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form #year {
+    width: 110px;
+    height: 34px;
+    border-radius: 15px; }
+  /* line 162, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form #city {
+    width: 310px;
+    height: 34px;
+    border-radius: 15px; }
+  /* line 166, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .r_button {
+    display: none; }
+  /* line 168, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .r_button + label {
+    background: url("../image/radio.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-left: 25px; }
+  /* line 172, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .r_button:checked + label {
+    background: url("../image/radio_active.png") no-repeat scroll 0 0; }
+  /* line 174, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .r_check {
+    display: none; }
+  /* line 176, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .r_check + label {
+    background: url("../image/check.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-left: 25px; }
+  /* line 180, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form .r_check:checked + label {
+    background: url("../image/check_active.png") no-repeat scroll 0 0; }
+  /* line 182, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  form input.btn_submit {
+    width: 310px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 36px;
+    color: #fff;
+    border: 1px solid #bfdc73;
+    box-shadow: 0 1px 1px #94b432;
+    background: #9dc130;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #9dc130 0%, #9dc130 50%, #72aa00 51%, #94c516 100%);
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #9dc130 0%, #9dc130 50%, #72aa00 51%, #94c516 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #9dc130 0%, #9dc130 50%, #72aa00 51%, #94c516 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #9dc130 0%, #9dc130 50%, #72aa00 51%, #94c516 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #9dc130 0%, #9dc130 50%, #72aa00 51%, #94c516 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dc130', endColorstr='#94c516', GradientType=1);
+    /* IE6-9 */ }
+
+/* line 204, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+#padding-none > form > div > table > tbody > tr > td:nth-child(4) > p {
+  margin: 0 5px; }
+
+/* line 206, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+.content {
+  max-width: 950px; }
+  /* line 208, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .content p {
+    font-size: 14px;
+    text-align: justify; }
+  /* line 211, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .content img.round-foto {
+    border-radius: 50%;
+    float: left;
+    margin: 7px 7px 7px 0;
+    shape-outside: inset(1% round 45%); }
+
+/* line 216, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+ul.nav-tabs {
+  margin-top: 20px; }
+  /* line 218, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  ul.nav-tabs li {
+    background-color: #f8f8f8;
+    border-top: 1px solid #eeeeee;
+    border-left: 1px solid #cccccc;
+    border-radius: 10px 10px 0 0; }
+  /* line 223, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  ul.nav-tabs li > a {
+    color: #a3a3a3;
+    font-size: 14px; }
+  /* line 226, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  ul.nav-tabs li.active > a {
+    color: #ffaf69;
+    border-left: 1px solid #cccccc; }
+    /* line 229, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+    ul.nav-tabs li.active > a span {
+      color: #929292; }
+
+/* line 231, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+.statistic {
+  max-width: 380px;
+  border-top: none;
+  margin-top: 80px;
+  padding-left: 20px;
+  padding-top: 30px; }
+  /* line 237, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .statistic .progress {
+    width: 210px;
+    height: 17px;
+    color: #eceeef;
+    margin-top: 22px;
+    margin-bottom: 25px;
+    border-left: 1px solid #D4D4D4;
+    border-top: 1px solid #D4D4D4;
+    border-right: 1px solid #afafaf;
+    border-bottom: 1px solid #afafaf;
+    background: #edf0f0;
+    background: -webkit-radial-gradient(#f4f9fa, #e7e8e8);
+    background: -o-radial-gradient(#f4f9fa, #e7e8e8);
+    background: -moz-radial-gradient(#f4f9fa, #e7e8e8);
+    background: linear-gradient(to bottom, #f4f9fa, #e7e8e8); }
+    /* line 252, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+    .statistic .progress .progress-bar {
+      height: 12px;
+      text-align: right;
+      font-size: 8px;
+      margin-top: 2px;
+      margin-left: 2px;
+      padding-top: 0;
+      padding-right: 15px;
+      color: #222;
+      border-radius: 3px;
+      background: #ff8d1c;
+      background: -webkit-radial-gradient(#ffaa05, #ff8d1c);
+      background: -o-radial-gradient(#ffaa05, #ff8d1c);
+      background: -moz-radial-gradient(#ffaa05, #ff8d1c);
+      background: linear-gradient(to bottom, #ffaa05, #ff8d1c); }
+  /* line 267, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .statistic ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+
+/* line 272, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+.text {
+  font-size: 14px;
+  padding-bottom: 50px;
+  line-height: 20px; }
+  /* line 276, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text .column {
+    -webkit-column-width: 290px;
+    -moz-column-width: 290px;
+    column-width: 290px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px; }
+  /* line 286, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text .orange-section {
+    color: #ffc28c;
+    font-size: 14px;
+    border-left: 3px solid #ffa352; }
+  /* line 290, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text span {
+    font-size: 8px;
+    color: #bbb; }
+  /* line 293, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text p.select {
+    line-height: 25px; }
+  /* line 295, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text a {
+    color: #ffc28c;
+    text-decoration: underline; }
+  /* line 298, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text a.more {
+    position: relative;
+    float: right;
+    padding-top: 25px; }
+  /* line 302, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text blockquote {
+    line-height: 15px; }
+  /* line 304, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text blockquote.quote {
+    border-left: none;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #bbb; }
+  /* line 311, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text blockquote.quote:before {
+    content: "“";
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.2em;
+    vertical-align: -.4em; }
+  /* line 317, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text blockquote.quote:after {
+    content: "”";
+    font-size: 3em;
+    line-height: 0.1em;
+    vertical-align: -.45em; }
+  /* line 322, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  .text blockquote.quote > p:first-child {
+    display: inline; }
+
+/* line 324, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+footer {
+  min-height: 100px; }
+  /* line 326, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  footer .container-width {
+    padding: 30px 0;
+    border-top: 1px solid #ececec; }
+  /* line 329, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  footer p {
+    display: inline-block;
+    position: relative;
+    float: right; }
+  /* line 333, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  footer h5 {
+    text-align: right; }
+  /* line 335, C:/Users/Koka/Desktop/newtest/webTest/css/SASS/style.sass */
+  footer h5 span {
+    color: #bbb; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+
+/*слайдер*/
+
+
+/*
+#wrapper {
+    margin-top: 20px;
+}
+*/
+
+#container{
+position: absolute;
+top: 60px;
+left: 40px;
+height: 70px;
+width: 390px; /* 5 images of 150px showing with a 10px margin = 5*(70) + 4*(10) = 390 */
+overflow: hidden;
+}
+ 
+ 
+#container img{
+position: absolute;
+top: 0px;
+height: 70px;
+width: 70px;
+cursor: pointer;
+overflow: hidden;
+}
+#container img:hover{
+}
+#carouselLeft{
+    -moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+position: absolute;
+top: 85px;
+left: 0px;
+cursor: pointer;
+}
+
+#carouselRight{
+position: absolute;
+top: 85px;
+left: 440px;
+cursor: pointer;
+}

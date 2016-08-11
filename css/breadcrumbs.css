@@ -1,0 +1,91 @@
+/*хлебные крошки*/
+
+#breadcrumbs-one {
+    width: 210px;
+    background: #c6c8c9;
+    font-size: 8px;
+    border-left: 1px solid #D4D4D4;
+    border-top: 1px solid #D4D4D4;
+    border-right: 1px solid #afafaf;
+    border-bottom: 1px solid #afafaf;
+    border-radius: 4px;
+    overflow: hidden;
+}
+#breadcrumbs-one li {
+    float: left;
+}
+#breadcrumbs-one a {
+    padding: .7em 1em .7em 1.5em;
+    float: left;
+    text-decoration: none;
+    color: #4e4e4e;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    background-color: #bfc0c0;
+}
+#breadcrumbs-one li:first-child {
+    padding-left: 0;
+    border-radius: 5px 0 0 5px;
+}
+#breadcrumbs-one li:last-child {}
+#breadcrumbs-one a:hover {
+    
+    background: #fff;
+}
+#breadcrumbs-one a::after,
+#breadcrumbs-one a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    border-left: 1em solid;
+    right: -1em;
+}
+#breadcrumbs-one > li:nth-child(5)::before {
+    border-left: none;
+}
+#breadcrumbs-one a::after {
+    z-index: 2;
+    border-left-color: #bfc0c0;
+}
+#breadcrumbs-one a::before {
+    border-left-color: #919192;
+    right: -1.1em;
+    z-index: 1;
+}
+#breadcrumbs-one a:hover::after {
+    border-left-color: #fff;
+}
+#breadcrumbs-one .current,
+#breadcrumbs-one .current:hover {
+    background: #ffa40a;
+    background: -webkit-radial-gradient(#ffa40a, #ffa40a);
+    /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#ffa40a, #ffa40a);
+    /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#ffa40a, #ffa40a);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #ffa40a, #ffa40a);
+}
+#breadcrumbs-one .current::after,
+#breadcrumbs-one .current::before {
+    content: normal;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    border-left: 1em solid #ffa40a;
+    right: -1em;
+    background: #ffa40a;
+    background: -webkit-radial-gradient(#ffa40a, #ffa40a);
+    /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#ffa40a, #ffa40a);
+    /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#ffa40a, #ffa40a);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #ffa40a, #ffa40a);
+    content: "";
+}
